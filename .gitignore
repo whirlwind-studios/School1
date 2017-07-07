@@ -1,0 +1,53 @@
+# http://git-scm.com/docs/gitignore
+
+# General wildcards
+*.bin
+*.apk
+*.out
+*.o
+*.so
+
+*.db3
+*.db3-shm
+*.db3-wal
+
+*.log
+log.txt
+
+*.tmp
+.tmp
+tmp
+temp
+
+.DS_Store
+Thumbs.db
+
+.idea
+.vscode
+# General wildcards
+
+# Android
+*.iml
+*.dex
+*.class
+
+Android/local.properties
+
+Android/build
+Android/captures
+Android/.gradle
+Android/.externalNativeBuild
+# Android
+
+# Ionic
+Ionic/UserInterfaceState.xcuserstate
+
+Ionic/.versions
+Ionic/.sass-cache
+Ionic/platforms
+Ionic/hooks
+Ionic/coverage
+Ionic/plugins
+Ionic/node_modules
+Ionic/dist
+# Ionic
