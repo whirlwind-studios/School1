@@ -25,16 +25,3 @@ Thumbs.db
 .idea
 .vscode
 # General wildcards
-
-# Ionic
-Ionic/UserInterfaceState.xcuserstate
-
-Ionic/.versions
-Ionic/.sass-cache
-Ionic/platforms
-Ionic/hooks
-Ionic/coverage
-Ionic/plugins
-Ionic/node_modules
-Ionic/dist
-# Ionic
