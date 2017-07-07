@@ -26,19 +26,6 @@ Thumbs.db
 .vscode
 # General wildcards
 
-# Android
-*.iml
-*.dex
-*.class
-
-Android/local.properties
-
-Android/build
-Android/captures
-Android/.gradle
-Android/.externalNativeBuild
-# Android
-
 # Ionic
 Ionic/UserInterfaceState.xcuserstate
 
