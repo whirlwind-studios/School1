@@ -44,4 +44,6 @@ dependencies {
     compile 'com.android.support:support-v13:25.3.1'
 
     compile 'com.google.android.gms:play-services-auth:11.0.2'
+
+    compile 'tech.gusavila92:java-android-websocket-client:1.1.2'
 }

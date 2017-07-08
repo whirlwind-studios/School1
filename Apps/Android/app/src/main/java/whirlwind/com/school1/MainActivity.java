@@ -1,7 +1,7 @@
 package whirlwind.com.school1;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import whirlwind.com.school1.Backend.Credentials;
 
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        if(!Credentials.isSignedIn())
+        if (!Credentials.isSignedIn())
             Credentials.autoSignin(this);
     }
 }
