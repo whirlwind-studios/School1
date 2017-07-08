@@ -62,7 +62,7 @@ public final class Backend {
         return backend;
     }
 
-    protected WebSocketClient getClient() {
+    public WebSocketClient getClient() {
         return client;
     }
 }
