@@ -4,6 +4,7 @@ import android.app.Application;
 import android.os.AsyncTask;
 import android.support.v4.content.LocalBroadcastManager;
 
+import whirlwind.com.school1.backend.Codes;
 import whirlwind.com.school1.backend.Database;
 
 public class School1 extends Application {
@@ -18,6 +19,7 @@ public class School1 extends Application {
             protected Object doInBackground(Integer... params) {
                 LocalBroadcastManager.getInstance(School1.this);
                 Database.getInstance().initialize(School1.this);
+                Codes.initialize(School1.this);
                 return null;
             }
         }.execute(0);

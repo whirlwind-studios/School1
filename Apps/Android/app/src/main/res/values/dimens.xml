@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="floatingActionButtonMargin">16dp</dimen>
+    <dimen name="floatingActionButtonMiniMargin">24dp</dimen>
+    <dimen name="floatingActionButtonTextMargin">84dp</dimen>
+    <dimen name="circleSubjectPrivateStrokeThickness">2dp</dimen>
+</resources>

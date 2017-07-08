@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorAccent">#FFC107</color>
+    <color name="warningRed">#F44336</color>
+    <color name="importantOrange">#FF9800</color>
+    <color name="greatGreen">#4CAF50</color>
+    <color name="grey">#E0E0E0</color>
+    <color name="primaryBlack">#DE000000</color>
+    <color name="primaryWhite">@android:color/white</color>
+    <color name="secondaryWhite">#B3FFFFFF</color>
+    <color name="tertiaryWhite">#80FFFFFF</color>
+    <color name="circle_subject_stroke_private_color">@android:color/white</color>
 </resources>

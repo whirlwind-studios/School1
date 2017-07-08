@@ -1,3 +1,251 @@
 <resources>
-    <string name="app_name">School1</string>
+    <string name="app_name" translatable="false">School1</string>
+    <string name="website_uri" translatable="false">http://whirlwind-studios.org</string>
+    <string name="patreon_uri" translatable="false">https://www.patreon.com/school1</string>
+    <string name="mail_uri" translatable="false">mailto:whirlwind.devstudios@gmail.com</string>
+
+    <string name="title_task_list">Tasks</string>
+    <string name="title_appointment_list">Appointments</string>
+    <string name="title_course_list">Courses</string>
+    <string name="title_lesson_list">Timetable</string>
+    <string name="title_account_general">General</string>
+
+    <string name="title_config_task_activity">Task</string>
+    <string name="title_config_appointment_activity">Appointment</string>
+    <string name="title_enter_course">Enter course</string>
+
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_finish">Finish</string>
+    <string name="action_timetable">Timetable</string>
+    <string name="action_account">Account</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_share">Share</string>
+    <string name="action_admin">Admin</string>
+    <string name="action_search">Search</string>
+    <string name="action_dashboard">Dashboard</string>
+    <string name="action_ideas">Ideas</string>
+    <string name="action_courses">Courses</string>
+    <string name="action_config_timetable">Your timetable</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+
+    <string name="text_task_completed_button">Completed</string>
+    <string name="text_task_incomplete_button">Incomplete</string>
+    <string name="text_cancel_button">Cancel</string>
+    <string name="text_ok_button">OK</string>
+    <string name="text_confirm_button">Confirm</string>
+    <string name="text_save_button">Save</string>
+    <string name="text_signin_button">Sign in</string>
+    <string name="text_signup_button">Sign up</string>
+    <string name="text_create_button">Create</string>
+    <string name="text_enter_participant_button">Enter as participant</string>
+    <string name="text_enter_admin_button">Enter as admin</string>
+    <string name="text_course_enter_button">Enter</string>
+    <string name="text_has_account_button">I already have an account</string>
+
+    <string name="settings_category_general">General</string>
+    <string name="settings_title_notifications">Notifications</string>
+    <string name="settings_summary_notifications">Notifications remind you not to forget that evil school</string>
+    <string name="settings_title_hide_completed">Hide completed</string>
+    <string name="settings_summary_hide_completed">When you finish a task, it will disappear to help you focus on what still needs to be completed</string>
+    <string name="settings_title_share_default">Default \"Share\" value</string>
+    <string name="settings_summary_share_default">Change the default \"Share\" value for new tasks and appointments</string>
+    <string name="settings_category_developer">Developer options</string>
+    <string name="settings_title_verbose">Verbose popups</string>
+    <string name="settings_summary_verbose">Activate this option, if you always want to know what\'s currently going on</string>
+    <string name="settings_developer_show_notifications_title">Show notifications</string>
+    <string name="settings_developer_show_notifications_summary">If you just want to have reminders or just want to test if they work correctly, press this button</string>
+
+    <string name="hint_subject_input">Subject</string>
+    <string name="hint_description_input">Description</string>
+    <string name="hint_user_name_input">Username</string>
+    <string name="hint_school_name_input">Name of your school</string>
+    <string name="hint_course_name_input">Name of the course/class</string>
+    <string name="hint_password_input">Password</string>
+    <string name="hint_confirm_password_input">Confirm password</string>
+    <string name="hint_course_name_config_input">Name of the course/class</string>
+    <string name="hint_lesson_subject_config_input">Subject</string>
+
+    <string name="message_course_participant">Course participant</string>
+    <string name="message_course_admin">Course admin</string>
+    <string name="message_nothing_due">Nothing to do here. Enjoy!</string>
+    <string name="message_task_popup">"\nTo be completed until "</string>
+    <string name="message_starting_from">"Starting from "</string>
+    <string name="message_appointment_popup">" on "</string>
+    <string name="message_task_share">"(until "</string>
+    <string name="message_appointment_share">"(on "</string>
+    <string name="message_course_popup_participant">You\'re logged in as a course participant</string>
+    <string name="message_course_popup_admin">"Because you\'re logged in the course\'s admin, here\'s its password: "</string>
+    <string name="message_date_today">"Today, "</string>
+    <string name="message_date_tomorrow">"Tomorrow, "</string>
+    <string name="message_date_this_week">This week</string>
+    <string name="message_date_next_week">Next week</string>
+    <string name="message_this_weekend">This weekend</string>
+    <string name="message_lesson_config_popup">". lesson on "</string>
+    <string name="message_lesson_config_popup_break">"Lunch break on "</string>
+    <string name="message_task_due">Task due tomorrow</string>
+    <string name="message_x_tasks_due">" tasks due tomorrow"</string>
+    <string name="message_appointment_due">Appointment tomorrow</string>
+    <string name="message_x_appointments_due">" appointments tomorrow"</string>
+
+    <string name="popup_signin_queued">Signing in&#8230;</string>
+    <string name="popup_signin_completed">Successfully signed in</string>
+    <string name="popup_signup_queued">Signing up&#8230;</string>
+    <string name="popup_signup_completed">Successfully signed up</string>
+    <string name="popup_login_school_queued">Logging into school&#8230;</string>
+    <string name="popup_login_school_completed">Successfully logged into school!</string>
+    <string name="popup_login_course_queued">Logging into course&#8230;</string>
+    <string name="popup_login_course_completed">Successfully logged into course!</string>
+    <string name="popup_sync_schools_queued">Receiving school data</string>
+    <string name="popup_sync_courses_queued">Receiving course data&#8230;</string>
+    <string name="popup_sync_userCourses_queued">Receiving user data</string>
+    <string name="popup_sync_schools_completed">Received all schools\' data</string>
+    <string name="popup_sync_courses_completed">Received all courses\' data</string>
+    <string name="popup_sync_userCourses_completed">Received all user data</string>
+    <string name="popup_sync_events_queued">Syncing tasks and appointments</string>
+    <string name="popup_sync_events_completed">Successfully synced tasks and appointments</string>
+    <string name="popup_sync_lessons_queued">Syncing lessons</string>
+    <string name="popup_sync_lessons_completed">Successfully synced lessons</string>
+    <string name="popup_upload_event_queued">Uploading entry&#8230;</string>
+    <string name="popup_upload_event_completed">Successfully uploaded entry</string>
+    <string name="popup_delete_event_queued">Deleting entry&#8230;</string>
+    <string name="popup_delete_event_completed">Successfully deleted entry</string>
+    <string name="popup_disconnected">Disconnected</string>
+    <string name="popup_connecting">Connecting&#8230;</string>
+    <string name="popup_connected">Connected</string>
+
+    <string name="promotion_basic">"By the way: You can download School1 in the Google Play Store at or use it in the Web!\nMore Info at http://whirlwind-studios.org\n"</string>
+    <string name="promotion_advantages">There are several advantages for you, like "</string>
+    <string name="promotion_reminder">reminders for tasks and appointments</string>
+    <string name="promotion_easy">With it, you can write down your assignments in no time!</string>
+    <string name="promotion_synchronization">automatically syncing tasks and appointments</string>
+    <string name="promotion_always">a timetable, which is always available in your pocket</string>
+
+    <string name="hint_public_checkbox">Share</string>
+    <string name="content_description_navigation_drawer_open">Open navigation drawer</string>
+    <string name="content_description_navigation_drawer_close">Close navigation drawer</string>
+    <string name="content_description_navigation_header_icon">School icon</string>
+
+    <string name="error_title">Error</string>
+    <string name="warning_title">Warning</string>
+
+    <string name="error_no_internet">Request will be executed when you\'re connected again</string>
+    <string name="error_no_course">You need to be logged in into at least one course in order to create public entries</string>
+    <string name="error_no_admin_course_with_subject">Sorry, you need to select the course manually, because this subject isn\'t in one of your admin courses</string>
+    <string name="error_already_logged_in">You\'re already logged in into a course with that name</string>
+    <string name="error_course_name_empty">The course name mustn\'t be empty</string>
+    <string name="error_unknown_host">Cannot determine the server\'s IP address. Please check your internet connectivity</string>
+    <string name="error_connect_failed">Cannot connect to the server. Please check your internet connectivity</string>
+    <string name="error_security_exception">Something prohibited School1 to connect to the internet. Find the reason and fix it!</string>
+    <string name="error_field_required">Field is required</string>
+    <string name="error_passwords_do_not_match">Passwords don\'t match</string>
+
+    <string name="info_course_config">
+        It seems like you don\'t have any courses selected yet.\n
+        Just tap on the + Button and select the option you want:\n\n
+        \"Enter as participant\" for an easy login without password\n
+        \"Enter as admin\" for an admin login with password in order to have the permission to edit contents of your course\n
+        \"Create\" in order to create a new course, but please double-check if it does exist already!</string>
+    <string name="info_feature_not_supported">This feature is unfortunately no yet implemented</string>
+    <string name="info_lesson_course">"\nCourse: "</string>
+    <string name="info_empty_fields">One or more fields are still empty</string>
+    <string name="info_date_today">due date is still set to today</string>
+    <string name="info_save_anyway">". Save anyway?"</string>
+    <string name="info_and">" and "</string>
+    <string name="info_coming_soon" translatable="false">Coming soon!</string>
+
+    <string name="about_category_contributors">Contributors</string>
+    <string name="about_contributor_idea_title">Idea and developer</string>
+    <string name="about_contributor_idea_summary" translatable="false">Michael Brönner</string>
+    <string name="about_contributor_developer_title">Main Developer</string>
+    <string name="about_contributor_developer_summary" translatable="false">Leon Höpfl</string>
+    <string name="about_contributor_management_title">Management</string>
+    <string name="about_contributor_management_summary" translatable="false">Benedikt Kainzbauer</string>
+    <string name="about_contributor_design_title">Design</string>
+    <string name="about_contributor_design_summary" translatable="false">Tim Glenz</string>
+    <string name="about_category_thanks">Thanks to</string>
+    <string name="about_thanks_principal_title">Principal</string>
+    <string name="about_thanks_principal_summary">He is one of those modern principals to allow digitization</string>
+    <string name="about_thanks_smv_title">School council</string>
+    <string name="about_thanks_smv_summary">They are the ones who (probably) made it possible for you to use School1</string>
+    <string name="about_thanks_support_library_title" translatable="false">Google\'s support libraries</string>
+    <string name="about_thanks_support_library_summary">These Apache 2.0 licensed libraries helping us building this great app should be mentioned anywhere, even if they\'re not perfect</string>
+    <string name="about_thanks_icons_title" translatable="false">www.material.io/icons</string>
+    <string name="about_thanks_icons_summary">This is the site, where nearly all Android developers have got their (Apache 2 licensed) icons from, so I think, they should be mentioned here</string>
+    <string name="about_category_social">Contact and support us</string>
+    <string name="about_social_website">Visit our website!</string>
+    <string name="about_social_email">Contact us!</string>
+    <string name="about_social_rate">Give us a review!</string>
+    <string name="about_social_patreon">Support us on Patreon!</string>
+    <string name="about_category_version">Version</string>
+    <string name="about_version_name_title">Version Name</string>
+    <string name="about_version_code_title">Version Number</string>
+
+    <string name="account_school_title">Your school</string>
+    <string name="account_category_recover">Recover</string>
+    <string name="account_recover_password">Recover password</string>
+
+    <string name="warning_delete_entry">Delete entry? This operation cannot be undone!</string>
+    <string name="warning_no_courses">You need to be logged in to at least one course to be able to make use of School1\'s online capabilities</string>
+    <string name="warning_delete_course">If you delete a course, ALL content associated with it will be unavailable forever, e.g. tasks or appointments. Delete anyway?</string>
+    <string name="warning_empty_lessons">You haven\'t added any lessons to your course. Finish anyway?</string>
+    <string name="monday">monday</string>
+    <string name="tuesday">tuesday</string>
+    <string name="wednesday">wednesday</string>
+    <string name="thursday">thursday</string>
+    <string name="friday">friday</string>
+    <string name="saturday">saturday</string>
+    <string name="sunday">sunday</string>
+
+    <string name="result_completed">Operations completed</string>
+    <string name="result_ok">Everything OK</string>
+    <string name="error_unknown_command">Unknown command</string>
+    <string name="error_invalid_table_id">Invalid table ID</string>
+    <string name="error_operation_not_supported">This operation is not supported</string>
+    <string name="error_not_logged_in">Tried to access functionality only available logged in</string>
+    <string name="error_not_logged_into_school">Tried to access functionality only available while being logged into a school</string>
+    <string name="error_execute_failed">Execution failed</string>
+    <string name="error_login_failed">Name or password are incorrect. Please check them and try again</string>
+    <string name="error_user_already_exists">A user with this name already exists</string>
+    <string name="error_course_already_exists">There is already a course with that name in your school</string>
+    <string name="error_api_version_outdated">School1 needs an update. New versions that require you to update usually introduce great new features or fix severe bugs</string>
+    <string name="error_verification_issue">Verification issue</string>
+    <string name="error_critical_error">An unknown critical error occurred. If this happens several times, please contact the developers</string>
+
+    <string-array name="day_names">
+        <item>@string/monday</item>
+        <item>@string/tuesday</item>
+        <item>@string/wednesday</item>
+        <item>@string/thursday</item>
+        <item>@string/friday</item>
+        <item>@string/saturday</item>
+        <item>@string/sunday</item>
+    </string-array>
+    <string-array name="types">
+        <item>@string/title_config_task_activity</item>
+        <item>@string/title_config_appointment_activity</item>
+    </string-array>
+    <string-array name="error_messages">
+        <item>@string/result_completed</item>
+        <item>@string/result_ok</item>
+        <item>@string/error_unknown_command</item>
+        <item>@string/error_invalid_table_id</item>
+        <item>@string/error_operation_not_supported</item>
+        <item>@string/error_not_logged_in</item>
+        <item>@string/error_not_logged_into_school</item>
+        <item>@string/error_execute_failed</item>
+        <item>@string/error_login_failed</item>
+        <item>@string/error_user_already_exists</item>
+        <item>@string/error_course_already_exists</item>
+        <item>@string/error_api_version_outdated</item>
+        <item>@string/error_verification_issue</item>
+        <item>@string/error_critical_error</item>
+    </string-array>
+    <string-array name="promotions">
+        <item>@string/promotion_easy</item>
+        <item>@string/promotion_reminder</item>
+        <item>@string/promotion_synchronization</item>
+        <item>@string/promotion_always</item>
+    </string-array>
 </resources>

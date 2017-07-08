@@ -23,6 +23,10 @@ public final class Database {
         return helper;
     }
 
+    public SharedPreferences getConfiguration() {
+        return configuration;
+    }
+
     public void initialize(Context context) {
         if (helper != null || configuration != null)
             throw new UnsupportedOperationException("Cannot initialize Database class twice");
