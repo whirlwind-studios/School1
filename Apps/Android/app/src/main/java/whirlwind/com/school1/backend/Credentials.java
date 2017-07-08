@@ -1,4 +1,4 @@
-package whirlwind.com.school1.Backend;
+package whirlwind.com.school1.backend;
 
 import android.content.Intent;
 import android.content.IntentSender;

@@ -1,4 +1,4 @@
-package whirlwind.com.school1.Backend;
+package whirlwind.com.school1.backend;
 
 import android.util.Log;
 
@@ -7,7 +7,7 @@ import java.net.URISyntaxException;
 
 import tech.gusavila92.websocketclient.WebSocketClient;
 
-public class Backend {
+public final class Backend {
 
     private static Backend backend = new Backend();
 
@@ -18,6 +18,7 @@ public class Backend {
             WebSocketClient client = new WebSocketClient(new URI("wss://whirlwind-studios.org")) {
                 @Override
                 public void onOpen() {
+
                 }
 
                 @Override
@@ -57,7 +58,11 @@ public class Backend {
         }
     }
 
-    WebSocketClient getClient() {
+    public static Backend getInstance() {
+        return backend;
+    }
+
+    protected WebSocketClient getClient() {
         return client;
     }
 }

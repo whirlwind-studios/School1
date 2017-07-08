@@ -3,7 +3,7 @@ package whirlwind.com.school1;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import whirlwind.com.school1.Backend.Credentials;
+import whirlwind.com.school1.backend.Credentials;
 
 public class MainActivity extends AppCompatActivity {
 
