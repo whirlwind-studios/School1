@@ -20,6 +20,8 @@ import com.google.android.gms.common.api.Status;
 // Any signin/signup Activity may override this one to use its methods
 public class Credentials extends AppCompatActivity {
 
+    // TODO: Enable sign-out?
+
     private static final int REQUEST_RESOLUTION = 0,
             REQUEST_SAVE = 1;
 
