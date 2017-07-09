@@ -1,11 +1,12 @@
-package whirlwind.com.school1;
+package whirlwind.com.school1.activity;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
+import whirlwind.com.school1.R;
 import whirlwind.com.school1.backend.Credentials;
+import whirlwind.com.school1.base.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
