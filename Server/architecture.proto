@@ -6,8 +6,8 @@ import "models.proto";
 // Using publish/subscribe pattern
 
 message Data {
-  uint32 dataId = 1; // Optional: To map publish/subscribe callbacks/request to response
-  uint32 type = 2; // Add, Edit, Remove: TODO: Enum?
+  uint32 dataId = 1;  // Optional: To map request to response -> callbacks
+  uint32 type = 2;    // Add, Edit, Remove: TODO: Enum?
 
   oneof data {
     Credentials credentials = 3;

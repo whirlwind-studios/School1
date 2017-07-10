@@ -14,24 +14,39 @@ message BaseEntity {
   uint64 id = 1;
   uint64 lastUpdatedTime = 2;  // used to check if there are new updates, much
                                // faster than comparing single entitities.
-                               // FIXME: Data integrity, if two updates were done at the same time, but only one was received (very rare)
+  // FIXME: Data integrity, if two updates were done at the same time, but only
+  // one was received (very rare)
   uint32 flags = 3;  // Also contains status such as deleted or updated to
                      // deliver the right Data subscribe
 }
 
 message Group {
   BaseEntity baseEntity = 1;
+  Type type = 2;
 
-  string name = 2;
-  // string password = 5; TODO: Create course login technique
-  // string description = 6; Do we really need that?
+  bytes icon = 2;
+  string name = 3;
+  string description = 4;  // Optional: Not for Courses, but School's and
+                           // Project's may use this property
+  string password = 5;     // Optional: Just for School groups
+
+  uint64 subgroupOf =
+      6;  // Optional: Every Course and Project is a subgroup of a School
+  // TODO: Clustered subgroup system for Course's and Project's to create
+  // real-world structure (n-m relationship)
+  enum Type {
+    School = 0;
+    Course = 1;
+    Project = 2;
+  }
 }
 
 message UserGroup {
   BaseEntity baseEntity = 1;
+  Group.Type type = 2;
 
-  uint64 userId = 2;
-  uint64 courseId = 3;
+  uint64 userId = 3;
+  uint64 groupId = 4;
 }
 
 message User {
