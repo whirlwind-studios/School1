@@ -47,6 +47,16 @@ message UserGroup {
 
   uint64 userId = 3;
   uint64 groupId = 4;
+
+  enum Permission {
+    Creator = 0;  // Admin permissions AND: Can add and remove Admin permissions
+                  // and kick everyone. A random Admin(Member if none available)
+                  // is given the Creator Permission when he exits.
+    Admin = 1;    // Member permissions AND: Can accept join requests and create
+                  // tasks and appointments. Was set as Admin by the Creator.
+    Member = 2;   // Can view stuff and chat, but nothing else. Join request was
+                  // accepted by an Admin or above.
+  }
 }
 
 message User {
