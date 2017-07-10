@@ -1,0 +1,26 @@
+syntax = "proto3";
+option optimize_for = SPEED;
+
+import "models.proto";
+
+// Using publish/subscribe pattern
+
+message Data {
+  uint32 dataId = 1; // Optional: To map publish/subscribe callbacks/request to response
+  uint32 type = 2; // Add, Edit, Remove: TODO: Enum?
+
+  oneof data {
+    Credentials credentials = 3;
+
+    Course course = 4;
+    UserCourse userCourse = 5;
+    User user = 6;
+    Event event = 7;
+    Lessons lesson = 8;
+  }
+}
+
+message Error {
+  uint32 code = 1;
+  string message = 2;
+}
