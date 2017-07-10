@@ -1,0 +1,28 @@
+syntax = "proto3";
+option optimize_for = SPEED;
+
+import "models.proto";
+
+// Using publish/subscribe pattern
+
+message Data {
+  uint32 dataId = 1;  // Optional: To map request to response -> callbacks
+  BaseEntity.Status status = 2;
+
+  oneof data {
+    Credentials credentials = 3;
+
+    Group group = 4;
+    UserGroup userGroup = 5;
+    User user = 6;
+    Event event = 7;
+    Lessons lesson = 8;
+    Conversation conversation = 9;
+    Message message = 10;  // TODO: Reorder
+  }
+}
+
+message Error {
+  uint32 code = 1;
+  string message = 2;
+}
