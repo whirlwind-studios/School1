@@ -16,9 +16,13 @@ import com.google.android.gms.common.api.ResolvingResultCallbacks;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
 
+import whirlwind.com.school1.base.BaseActivity;
+
 
 // Any signin/signup Activity may override this one to use its methods
-public class Credentials extends AppCompatActivity {
+public class Credentials extends BaseActivity {
+
+    // TODO: Enable sign-out?
 
     private static final int REQUEST_RESOLUTION = 0,
             REQUEST_SAVE = 1;
