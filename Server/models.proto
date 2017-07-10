@@ -12,23 +12,31 @@ message Credentials {
 // BaseEntity containing common information among data holders
 message BaseEntity {
   uint64 id = 1;
-  uint64 lastUpdatedTime = 2;  // used to check if there are new updates, much
-                               // faster than comparing single entitities.
+  uint64 lastChangeTime = 2;  // Used to check if there are new updates, much
+                              // faster than comparing single entities.
+  // FIXME: Doesn't need to be transmitted, only the lastUpdateRequestTime
+  // should be saved on client side
   // FIXME: Data integrity, if two updates were done at the same time, but only
   // one was received (very rare)
-  uint32 flags = 3;  // Also contains status such as deleted or updated to
-                     // deliver the right Data subscribe
+  Status status =
+      3;  // Contains Status of last change to deliver the right Data subscribe
+
+  enum Status {
+    add = 0;
+    edit = 1;    // TODO: Edit or update?
+    remove = 2;  // TODO: Remove or delete?
+  }
 }
 
 message Group {
   BaseEntity baseEntity = 1;
   Type type = 2;
 
-  bytes icon = 2;
+  bytes icon = 2;  // Optional: Project's and School's may use an icon
   string name = 3;
-  string description = 4;  // Optional: Not for Courses, but School's and
-                           // Project's may use this property
-  string password = 5;     // Optional: Just for School groups
+  string description =
+      4;  // Optional: Project's and School's may use a description
+  string password = 5;  // Optional: Just for School groups
 
   uint64 subgroupOf =
       6;  // Optional: Every Course and Project is a subgroup of a School

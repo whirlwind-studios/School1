@@ -7,16 +7,18 @@ import "models.proto";
 
 message Data {
   uint32 dataId = 1;  // Optional: To map request to response -> callbacks
-  uint32 type = 2;    // Add, Edit, Remove: TODO: Enum?
+  BaseEntity.Status status = 2;
 
   oneof data {
     Credentials credentials = 3;
 
-    Course course = 4;
-    UserCourse userCourse = 5;
+    Group group = 4;
+    UserGroup userGroup = 5;
     User user = 6;
     Event event = 7;
     Lessons lesson = 8;
+    Conversation conversation = 9;
+    Message message = 10;  // TODO: Reorder
   }
 }
 
