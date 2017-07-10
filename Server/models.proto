@@ -70,7 +70,7 @@ message User {
 message Event {
   BaseEntity baseEntity = 1;
 
-  uint64 courseId = 2;
+  uint64 groupId = 2;
 
   string subject = 3;
   string description = 4;
@@ -80,8 +80,27 @@ message Event {
 message Lesson {
   BaseEntity baseEntity = 1;
 
-  uint64 courseId = 2;
+  uint64 groupId = 2;
 
   string name = 3;
   uint32 time = 4;  // Contains hour and dayOfWeek
+}
+
+message Conversation {
+  BaseEntity baseEntity = 1;
+
+  oneof participants {
+    uint64 groupId = 2;
+    uint64 userId = 3;
+  }
+}
+
+message Message {
+  BaseEntity baseEntity = 1;
+
+  uint64 conversationId = 2;
+  uint64 senderId = 3;
+
+  bytes image = 4;
+  string message = 5;
 }
