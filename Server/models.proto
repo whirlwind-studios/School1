@@ -18,8 +18,8 @@ message BaseEntity {
   // should be saved on client side
   // FIXME: Data integrity, if two updates were done at the same time, but only
   // one was received (very rare)
-  Status status =
-      3;  // Contains Status of last change to deliver the right Data subscribe
+  Status status = 3;  // Contains Status of last change to deliver the correct
+                      // Data subscribe
 
   enum Status {
     add = 0;
