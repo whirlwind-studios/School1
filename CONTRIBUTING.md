@@ -20,7 +20,7 @@ If you want to contribute code, visit the repository of the platform you want to
 <a name="repositories-en"></a>Currently available platforms are:
 
 - [Android](https://github.com/whirlwind-studios/School1-Android)
-- [Hybrid](https://github.com/whirlwind-studios/School1-Hybrid)
+- [Hybrid](https://github.com/whirlwind-studios/School1-Hybrid) a.k.a. Cross Platform
 - [Web](https://github.com/whirlwind-studios/School1-Web)
 
 If you don't know where to start, have a look at current issues both in your platform's repository and in general issues in this repository, and search for something you would like to fix, implement or investigate.
@@ -47,7 +47,7 @@ Notes:
 
 - For crashes, please use Android's internal crash reporting system, if applicable.
 - For platform specific issues please go the the [appropriate repository](#repositories-en)
-- For general improvements, such as feature requests, use this just this repository
+- For general improvements, such as feature requests, please use just this repository
 
 To be able to properly understand and efficiently use it's content, please be as clear and as constructive as possible, and if applicable, providing examples how to reproduce errors or the exact context of the report/request.
 
@@ -66,7 +66,7 @@ Wenn du zu den eigentlichen Programmen beitragen willst, besuche das Repository 
 <a name="repositories-de"></a>Aktuell verfügbare Plattformen:
 
 - [Android](https://github.com/whirlwind-studios/School1-Android)
-- [Hybrid](https://github.com/whirlwind-studios/School1-Hybrid)
+- [Hybrid](https://github.com/whirlwind-studios/School1-Hybrid) a.k.a. platformübergreifend (iOS etc.)
 - [Web](https://github.com/whirlwind-studios/School1-Web)
 
 Wenn du nicht weißt, wo du anfangen sollst, schaue dir mal die derzeitigen Issues sowohl in diesem Repository, als auch in dem deiner Platform an, und schaue mal, ob du etwas findest, was du gerne beheben, implementieren oder überprüfen würdest.
