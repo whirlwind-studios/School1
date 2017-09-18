@@ -4,7 +4,7 @@ School1 is an app to help students being more organized and saving time due to i
 
 ## Getting Started
 
-School1 is intended to run on the most common platforms Android, iOS, Windows (Phone) 10, OSX and Linux, and last but not least in the browser. To view or write code you'll want to have a look at the sections [branches](#branches) and [platforms](#platforms).
+School1 is intended to run on the most common platforms Android, iOS, Windows (Phone) 10, OSX and Linux, and last but not least in the browser. To view or write code you'll want to have a look at the sections [repositories](#repositories) and [platforms](#platforms).
 
 Also, it aims to provide an excellent, platform specific UI to be intuitive and easy to use, yet powerful, optimal both in terms of performance and user experience, open to innovation and completely free.
 
