@@ -1,0 +1,38 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Rules for the users node
+    match /users/{userId} {
+      allow read, write: if request.auth.uid == userId;
+
+      // Rules for user's items node
+      match /items/{itemId} {
+        allow read, write: if request.auth.uid == userId;
+      }
+      match /groups/{groupId} {
+        allow read, write: if request.auth.uid == userId;
+      }
+    }
+
+    // Rules for the groups node
+    match /groups/{groupId} {
+      allow read;
+
+      // TODO: Refine with more specific checks (e.g. if the name already exists, user has this parentGroup, name length > 0)
+      allow create;
+      // allow create: if (request.resource.data.size() == 2 && request.resource.data.keys.hasAll(['type','name']));
+      //                && request.resource.data.type is int && request.resource.data.type == 0
+      //                && request.resource.data.name is string)
+      //              || (request.resource.data.size() == 3 && request.resource.data.keys.hasAll(['type','name','parentGroup'])
+      //                && request.resource.data.type >= 1
+      //                && request.resource.data.name is string
+      //                && request.resource.data.parentGroup is string);
+
+      // Rules for group's items node
+      match /items/{itemId} {
+        allow read;
+        allow write: if exists(/databases/$(database)/documents/users/$(request.auth.uid)/groups/$(groupId))
+                      && get(/databases/$(database)/documents/users/$(request.auth.uid)/groups/$(groupId)).data.access_level > 0;
+      }
+    }
+  }
+}

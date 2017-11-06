@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "school1-debug-b0bb2",
+    "release": "school1-9bdd0",
+    "quality assurance": "school1-qa",
+    "debug": "school1-debug-b0bb2"
+  }
+}
